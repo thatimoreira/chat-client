@@ -6,9 +6,14 @@ def create_message(data):
     sender = data.get('sender')
     text = data.get('text')
 
-    message = {
+    message = { 
         "sender": sender,
         "text": text
-    }
+    }   
 
     return repository.save_message(message)
+
+def get_all_messages():
+    messages, status_code = repository.fetch_all_messages()
+
+    return messages, status_code

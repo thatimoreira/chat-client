@@ -33,8 +33,7 @@ def menu():
                 #controller.get_message_by_id()
                 print("Mensagens POR ID")
             elif user_option == '5':
-                #controller.list_all_messages()
-                print("TODAS AS MENSAGENS")
+                controller.list_all_messages()
             elif user_option == '6':
                 #controller.edit_message()
                 print("EDITAR mensagem")

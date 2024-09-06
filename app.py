@@ -30,8 +30,7 @@ def menu():
                 #controller.list_messages_by_author()
                 print("Mensagens POR AUTOR")
             elif user_option == '4':
-                #controller.get_message_by_id()
-                print("Mensagens POR ID")
+                controller.get_message_by_id()
             elif user_option == '5':
                 controller.list_all_messages()
             elif user_option == '6':
